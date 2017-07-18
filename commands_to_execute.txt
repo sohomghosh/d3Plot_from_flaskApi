@@ -1,0 +1,23 @@
+pip3 install flask flask-cors
+pip3 install flask flask_cors
+yum install python-flask
+pip3 install flask
+
+
+#From the folder containing flask_try.py
+chmod +x python_flask_file.py
+python3 ./flask_try.py
+
+
+#From the folder containing index_try.html
+python -m http.server
+
+
+#####From the browser#####
+
+#To see the json file
+http://174.81.35.180:5000/table_of_number/10
+#This number 10 is an argument; it can be changed as required
+
+#To see the d3 plot
+http://174.81.35.180:8000/index_try.html
