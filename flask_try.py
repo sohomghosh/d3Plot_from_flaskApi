@@ -7,7 +7,7 @@ app = FlaskAPI(__name__)
 CORS(app, support_credentials=True)
 
 
-@app.route("/table_of_number/<int:num>", methods=['GET'])
+@app.route("/table_of_number/<int:num>", methods=['GET'])#@app.route("/table_of_number/<string:txt>", methods=['GET'])
 @cross_origin(supports_credentials=True)
 def api_table(num):
     ans=[{'1':num*1},{'2':num*2},{'8':num*8}]
